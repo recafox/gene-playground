@@ -1,0 +1,33 @@
+{
+  "name": "gene-event-handler",
+  "authors": [
+    "Trevor Pao <shuaib25@gmail.com>"
+  ],
+  "keywords": [
+    "gene",
+    "gee",
+    "event",
+    "handler"
+  ],
+  "license": "MIT",
+  "homepage": "http://sense-info.co",
+  "description": "a event handler",
+  "main": [
+    "dist/scripts/jquery.gene.min.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "_release": "9e86d28ad1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9e86d28ad106d18d70aa69dc819cc84b6ddc0b31"
+  },
+  "_source": "https://github.com/trevorpao/geneEH.git",
+  "_target": "*",
+  "_originalSource": "gene-event-handler",
+  "_direct": true
+}
