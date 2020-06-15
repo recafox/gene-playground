@@ -11,8 +11,9 @@
   <h1>待辦事項</h1>
   <div class="container">
     <div class="tab-panel">
-      <div class="tab active gee" data-gene='click:changeToUnfinished'>未完成</div>
-      <div class="tab gee" data-gene='click:changeToFinished'>已完成</div>
+      <div class="tab gee" data-gene='click:changeToAll' id='tabAll'>全部</div>
+      <div class="tab gee active" data-gene='click:changeToUnfinished' id='tabUnfinished'>未完成</div>
+      <div class="tab gee" data-gene='click:changeToFinished' id='tabFinished'>已完成</div>
     </div>
     <div class="content">
       <div class="input-group">
@@ -38,7 +39,8 @@
 
     $(document).ready(function() {
         gee.storageName = 'todoList';
-        gee.initTodo();
+        gee.todoList = (localStorage.getItem(gee.storageName))? JSON.parse(localStorage.getItem(gee.storageName)) : [];
+        gee.changeToAll($('#tabAll'));
         gee.init();
     });
   </script>
